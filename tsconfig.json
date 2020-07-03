@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true, // Generate corrresponding .map file
+    "noImplicitAny": false, // TypeScript will issue an error whenever it would have inferred any
+    "module": "es2020", // Specify module code generation
+    "target": "es6", // Specify ECMAScript target version
+    "jsx": "react", // Support JSX in .tsx files
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true, // Skip type checking of all declaration files
+    "esModuleInterop": true, // Disables namespace imports (import * as fs from "fs") and enables CJS/AMD/UMD style imports (import fs from "fs")
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "strict": true, // Enable all strict type checking options
+    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file.
+    "moduleResolution": "node", // Resolve modules using Node.js style
+    "resolveJsonModule": true, // Include modules imported with .json extension
+    "isolatedModules": false,
+    "strictNullChecks": false,
+    "noEmit": false, // Do not emit output (meaning do not compile code, only perform type checking)
+    "baseUrl": "src"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "dev_server.js"],
+  "compileOnSave": false // disable TypeScript's compileOnSave as that will be handled by webpack
+}
